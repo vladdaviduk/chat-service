@@ -1,0 +1,23 @@
+package com.chatty.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class ChatDto {
+
+    private long id;
+
+    private String firstOwner;
+
+    private String secondOwner;
+
+    private List<MessageDto> messages;
+}
